@@ -1,0 +1,15 @@
+package com.example.tpfoyer.repositories;
+
+
+import com.example.tpfoyer.entity.Etudiant;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface EtudiantRepository extends JpaRepository<Etudiant,Long> {
+
+    List<Etudiant> findByNomEtContainingIgnoreCase(String nom);
+    List<Etudiant> findByUniversiteIdUniversite(Long universiteId);
+}
