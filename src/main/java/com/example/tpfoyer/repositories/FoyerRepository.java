@@ -10,6 +10,5 @@ import java.util.List;
 @Repository
 public interface FoyerRepository extends JpaRepository<Foyer,Long> {
 
-    List<Foyer> findByNomFoyerContainingIgnoreCase(String nom);
-    Long countByCapaciteFoyerGreaterThan(Long capacite);
+
 }

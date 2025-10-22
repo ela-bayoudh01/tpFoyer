@@ -11,7 +11,5 @@ import java.util.List;
 @Repository
 public interface ReservationRepository extends JpaRepository<Reservation,String> {
 
-    List<Reservation> findByAnneeUniversitaire(Date annee);
-    List<Reservation> findByEstValideTrue(); // Réservations validées
-    List<Reservation> findByChambreIdChambre(Long chambreId);
+
 }

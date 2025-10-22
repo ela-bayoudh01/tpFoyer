@@ -11,15 +11,4 @@ import java.util.List;
 @Repository
 public interface ChambreRepository extends JpaRepository<Chambre,Long> {
 
-
-    // Trouver les chambres par type
-    List<Chambre> findByTypeC(TypeChambre type);
-
-    // Trouver les chambres avec un numéro supérieur à une valeur
-    List<Chambre> findByNumeroChambreGreaterThan(Long numero);
-
-    // Compter les chambres d'un bloc
-    Long countByBlocIdBloc(Long blocId);
-
-
 }

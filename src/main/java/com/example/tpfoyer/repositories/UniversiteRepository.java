@@ -10,6 +10,5 @@ import java.util.List;
 @Repository
 public interface UniversiteRepository extends JpaRepository<Universite,Long> {
 
-    List<Universite> findByNomUniversiteContainingIgnoreCase(String nom);
-    Long countByAdresseContaining(String adresse);
+
 }

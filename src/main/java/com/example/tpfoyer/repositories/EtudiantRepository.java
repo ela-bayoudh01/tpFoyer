@@ -10,6 +10,5 @@ import java.util.List;
 @Repository
 public interface EtudiantRepository extends JpaRepository<Etudiant,Long> {
 
-    List<Etudiant> findByNomEtContainingIgnoreCase(String nom);
-    List<Etudiant> findByUniversiteIdUniversite(Long universiteId);
+
 }

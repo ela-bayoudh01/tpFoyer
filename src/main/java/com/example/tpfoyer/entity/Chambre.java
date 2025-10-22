@@ -17,6 +17,7 @@ public class Chambre implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idChambre;
+
     private Long numeroChambre;
 
     @Enumerated(EnumType.STRING)
